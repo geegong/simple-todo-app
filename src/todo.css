@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "NanumGothic";
+    src: url("./font/NanumGothic.ttf") format("ttf"), 
+    url("./font/NanumGothic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "NanumGothicBold";
+    src: url("./font/NanumGothicBold.ttf") format("ttf"), 
+    url("./font/NanumGothicBold.otf") format("opentype");
+}
+
+body {
+    font-family: "NanumGothic";
+}
+
+svg {
+    fill: black;
+}
+
+
+div.frame {
+ width: 400px;
+ height: 450px;
+ border-radius: 20px;
+ background-color: #46649B;
+}
+
+div.day-frame {
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #d3b353;
+   }
+
+.top-buttons {
+width: 100%;
+height: 10%;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+background-color: #323C73;
+border-bottom: solid;
+border-bottom-color: aliceblue;
+}
+
+.day-top-buttons {
+    width: 100%;
+    height: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #e69a1f;
+    border-bottom: solid;
+    border-bottom-color: aliceblue;
+}
+
+.darkMode {
+    display: inline flex;
+    padding: 1rem;
+    margin: auto;
+    /* background-color: aliceblue; */
+    /* background: content-box radial-gradient(crimson, skyblue); */
+    /* background: content-box repeating-linear-gradient() */
+    & svg {
+        fill: white;
+    }
+}
+
+.un-darkMode {
+    display: inline flex;
+    padding: 1rem;
+    margin: auto;
+    /* background-color: aliceblue; */
+    /* background: content-box radial-gradient(crimson, skyblue); */
+    /* background: content-box repeating-linear-gradient() */
+    & svg {
+        fill: rgb(208, 192, 222);
+    }
+}
+
+.filter {
+    display: inline;
+    padding: 1rem;
+    float: right;
+    text-align: center;
+    margin: auto;
+    color: #FFA01E;
+}
+
+.day-filter {
+    display: inline;
+    padding: 1rem;
+    float: right;
+    text-align: center;
+    margin: auto;
+    color: #302d2a;
+}
+
+
+
+/* filter button checked*/
+a.checked {
+    font-family: "NanumGothicBold";
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.check-todo {
+    display: inline;
+}
+
+.cards {
+    width: 95%;
+    height: 80%;
+    top: 15px;
+    left: 5px;
+    position: relative;
+    clear: right; /*요 놈을 추가하니까 float:right 만 해도 안되던게 오른쪽 정렬이 잘됨..*/
+}
+
+.card {
+    margin: 0.2em;
+}
+
+.todo {
+    display: inline;
+}
+
+/* todo card checked*/
+p.todo.checked {
+    display: inline;
+    color: gainsboro;
+    text-decoration-line: line-through;
+}
+
+.trash-todo {
+    display: inline;
+    float: right;
+    /* text-align: right; */
+    margin: auto;
+    
+}
+
+/* Add Todo button */
+.add-todo {
+    width: 100%;
+    left: 20px;
+    position: relative;
+    /* margin: auto; */
+}
+
+.add-todo-input {
+    width: 70%; /*width 값을 주지 않으면 작네.. 디폴트 100% 인줄 알았는데..*/
+    display: inline;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.add-todo-button {
+    width: 20%;
+    display: inline;
+    background-color: #FFA01E;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
